@@ -1,5 +1,5 @@
-FROM alpine:latest
-MAINTAINER Uri Savelchev <alterrebe@gmail.com>
+FROM alpine:3.12
+LABEL maintainer="Doğukan Çağatay <dcagatay@gmail.com>"
 
 # Packages: update
 RUN apk -U add postfix ca-certificates libsasl cyrus-sasl-plain cyrus-sasl-login py-pip supervisor rsyslog
